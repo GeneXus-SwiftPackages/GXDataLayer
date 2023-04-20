@@ -25,8 +25,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXDataLayer",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXDataLayer-1.0.0-beta+20230418130717.xcframework.zip",
-			checksum: "8d4f8475e25df8edfc11bed3c8a7bd08d4803a71b2c2c52cb31e6b8d573a3563"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXDataLayer-1.0.0-beta+20230420132651.xcframework.zip",
+			checksum: "d41373ab07dfa7e3067d75d0c428d9e180c1c6c9765ff96b311ffcbbd885dbad"
 		)
 	]
 )
