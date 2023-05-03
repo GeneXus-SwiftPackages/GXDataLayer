@@ -19,14 +19,14 @@ let package = Package(
 				dependencies: [
 					"GXDataLayer",
 					.product(name: "GXFoundation", package: "GXFoundation", condition: .when(platforms: [.iOS])),
-					.product(name: "GXObjectsModel", package: "GXObjectsModel", condition: .when(platforms: [.watchOS, .iOS, .tvOS])),
+					.product(name: "GXObjectsModel", package: "GXObjectsModel", condition: .when(platforms: [.iOS, .watchOS, .tvOS])),
 					.product(name: "YAJL", package: "YAJL", condition: .when(platforms: [.iOS]))
 				],
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXDataLayer",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXDataLayer-1.0.0-beta+20230502131235.xcframework.zip",
-			checksum: "5ad0d541da0abaa571b8acff3008165540d145aa5a52a47a86d085736de6779d"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXDataLayer-1.0.0-beta+20230503131704.xcframework.zip",
+			checksum: "8cb164392e484150b5983e8b98cd2ffb0796dcc6e2b3398cdaf4bd5cf8a704a4"
 		)
 	]
 )
