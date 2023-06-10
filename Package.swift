@@ -10,23 +10,23 @@ let package = Package(
 			targets: ["GXDataLayerWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXFoundation.git", revision: "195f2873dc3ed7d924d9a72b86f629015eadef71"),
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXObjectsModel.git", revision: "2850c07662d2291aeb37634ebb5c498d5ad0d6a4"),
-		.package(url: "https://github.com/GeneXus-SwiftPackages/YAJL.git", revision: "9c402239ffc52982baa281b75e0e85f29eb1d322")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXFoundation.git", revision: "f0c69c8ba0244d9f0b9fd6192dcec332d743de93"),
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXObjectsModel.git", revision: "00ba5570aa6cf8e6a7b4973bddfbb9b46ed54921"),
+		.package(url: "https://github.com/GeneXus-SwiftPackages/YAJL.git", revision: "c64408581969def9a3cbf75983455b83b0421c4d")
 	],
 	targets: [
 		.target(name: "GXDataLayerWrapper",
 				dependencies: [
 					"GXDataLayer",
 					.product(name: "GXFoundation", package: "GXFoundation", condition: .when(platforms: [.iOS])),
-					.product(name: "GXObjectsModel", package: "GXObjectsModel", condition: .when(platforms: [.iOS, .tvOS, .watchOS])),
+					.product(name: "GXObjectsModel", package: "GXObjectsModel", condition: .when(platforms: [.tvOS, .iOS, .watchOS])),
 					.product(name: "YAJL", package: "YAJL", condition: .when(platforms: [.iOS]))
 				],
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXDataLayer",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXDataLayer-1.0.0-beta+20230609175617.xcframework.zip",
-			checksum: "5a626f52f5551db71fa20cb82382aeffcea36fa6159036adbb2400a59752c9ed"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXDataLayer-1.0.0-beta+20230610052334.xcframework.zip",
+			checksum: "aca52c5fe7ef4e922e8075ab64df8e3efd7cb17c49d7a7f977bc3458a13fe09c"
 		)
 	]
 )
