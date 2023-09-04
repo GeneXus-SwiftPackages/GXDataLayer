@@ -10,23 +10,23 @@ let package = Package(
 			targets: ["GXDataLayerWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXFoundation.git", exact: "1.1.2"),
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXObjectsModel.git", exact: "1.1.2"),
-		.package(url: "https://github.com/GeneXus-SwiftPackages/YAJL.git", exact: "1.1.2")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXFoundation.git", exact: "1.1.3"),
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXObjectsModel.git", exact: "1.1.3"),
+		.package(url: "https://github.com/GeneXus-SwiftPackages/YAJL.git", exact: "1.1.3")
 	],
 	targets: [
 		.target(name: "GXDataLayerWrapper",
 				dependencies: [
 					"GXDataLayer",
 					.product(name: "GXFoundation", package: "GXFoundation", condition: .when(platforms: [.iOS])),
-					.product(name: "GXObjectsModel", package: "GXObjectsModel", condition: .when(platforms: [.iOS, .tvOS, .watchOS])),
+					.product(name: "GXObjectsModel", package: "GXObjectsModel", condition: .when(platforms: [.iOS, .watchOS, .tvOS])),
 					.product(name: "YAJL", package: "YAJL", condition: .when(platforms: [.iOS]))
 				],
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXDataLayer",
-			url: "https://pkgs.genexus.dev/iOS/releases/GXDataLayer-1.1.2.xcframework.zip",
-			checksum: "1edf8029bbccdf90084ef35d0c6b99cd38baccf13de7fc6e5f98375226c956ec"
+			url: "https://pkgs.genexus.dev/iOS/releases/GXDataLayer-1.1.3.xcframework.zip",
+			checksum: "740f4fefe73c5d4e537bb4124b65475bf0a2edea8310d19c1686980437a4134e"
 		)
 	]
 )
