@@ -3,14 +3,14 @@ import PackageDescription
 
 let package = Package(
 	name: "GXDataLayer",
-	platforms: [.iOS("12.0"), .watchOS("9.0"), .tvOS("12.0"), .visionOS("1.0")],
+	platforms: [.iOS("13.0"), .watchOS("9.0"), .tvOS("13.0"), .visionOS("1.0")],
 	products: [
 		.library(
 			name: "GXDataLayer",
 			targets: ["GXDataLayerWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXObjectsModel.git", exact: "2.2.0-beta.21")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXObjectsModel.git", exact: "2.2.0-beta.24")
 	],
 	targets: [
 		.target(name: "GXDataLayerWrapper",
@@ -21,8 +21,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXDataLayer",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXDataLayer-2.2.0-beta.21.xcframework.zip",
-			checksum: "c1b9f7b7dcb3cba8c6fb1e701c10f71805f40940817548f9b31e4c153021308e"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXDataLayer-2.2.0-beta.24.xcframework.zip",
+			checksum: "2573a18a456f712606d51d0c03663e1300f0719ad63ac490fd78db3c0768a98d"
 		)
 	]
 )
