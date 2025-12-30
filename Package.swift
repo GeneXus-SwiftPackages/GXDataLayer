@@ -10,7 +10,7 @@ let package = Package(
 			targets: ["GXDataLayerWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXObjectsModel.git", exact: "4.1.0-beta.16")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXObjectsModel.git", exact: "4.1.0-beta.17")
 	],
 	targets: [
 		.target(name: "GXDataLayerWrapper",
@@ -21,8 +21,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXDataLayer",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXDataLayer-4.1.0-beta.16.xcframework.zip",
-			checksum: "fd3aaeef0d0ad28bc70cff90f3f73dc5f3026db3f3690e0b28ec415c3a352b11"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXDataLayer-4.1.0-beta.17.xcframework.zip",
+			checksum: "6f540a45c287999be19b15085e94960ffc75a221f450adefdb7969becae41b37"
 		)
 	]
 )
